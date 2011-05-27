@@ -10,7 +10,7 @@ NavController.navGroup = Ti.UI.iPhone.createNavigationGroup({
 	window:NavController.win
 });
 
-NavController.mainWindow.add(NavController.navGroup)
+NavController.mainWindow.add(NavController.navGroup);
 
 // BUTTON
 NavController.button = Ti.UI.createButton({
@@ -28,7 +28,7 @@ NavController.button.addEventListener('click', function()
 	var l = Ti.UI.createLabel({
 		textAlign:'center',
 		text:'New Window'
-	})
+	});
 	NavController.navGroup.open(w,{animated:true});
 });
 NavController.win.add(NavController.button);
@@ -48,6 +48,6 @@ NavController.win.add(NavController.closeButton);
 
 NavController.open = function()
 {
-	Ti.API.info('IN OPEN')
+	Ti.API.info('IN OPEN');
 	NavController.mainWindow.open();	
 };

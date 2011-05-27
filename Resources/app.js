@@ -75,7 +75,7 @@ b5.addEventListener('click', function()
 	w.add(l);
 	w.orientationModes = [
 		Titanium.UI.LANDSCAPE_LEFT,
-		Titanium.UI.LANDSCAPE_RIGHT,
+		Titanium.UI.LANDSCAPE_RIGHT
 	];
 	w.open();
 });

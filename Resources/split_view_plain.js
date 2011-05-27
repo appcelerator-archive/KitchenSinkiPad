@@ -48,12 +48,12 @@ SplitViewPlain.modalButton.addEventListener('click', function() {
 // SPLIT VIEW
 SplitViewPlain.splitView = Titanium.UI.iPad.createSplitWindow({
 	masterView:SplitViewPlain.masterWindow,
-	detailView:SplitViewPlain.detailWindow,
+	detailView:SplitViewPlain.detailWindow
 });
 
 SplitViewPlain.splitView.orientationModes = [
 	Titanium.UI.LANDSCAPE_LEFT,
-	Titanium.UI.LANDSCAPE_RIGHT,
+	Titanium.UI.LANDSCAPE_RIGHT
 ];
 
 SplitViewPlain.open = function()
