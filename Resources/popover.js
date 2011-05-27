@@ -53,12 +53,12 @@ Popover.init = function()
 			height:300
 		});
 
-		popover.add(searchBar)
+		popover.add(searchBar);
 		popover.add(tableView);
 
 		popover.show({
 			view:b1,
-			animated:true,
+			animated:true
 		}); 
 
 	});
@@ -93,10 +93,10 @@ Popover.init = function()
 		picker.add(data);
 		picker.selectionIndicator = true;
 
-		popover.add(picker)
+		popover.add(picker);
 		popover.show({
 			view:b2,
-			animated:true,
+			animated:true
 		}); 
 
 	});
@@ -158,14 +158,14 @@ Popover.init = function()
 		var scrollView = Titanium.UI.createScrollableView({
 			views:[view1,view2,view3],
 			showPagingControl:true,
-			pagingControlHeight:30,
+			pagingControlHeight:30
 		});
 
-		popover.add(scrollView)
+		popover.add(scrollView);
 
 		popover.show({
-			view:b3,
+			view:b3
 		}); 
 
 	});	
-}
+};

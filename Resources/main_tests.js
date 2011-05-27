@@ -31,13 +31,13 @@ MainTests.detailNav = Ti.UI.iPhone.createNavigationGroup({
 // SPLIT VIEW
 MainTests.splitView = Titanium.UI.iPad.createSplitWindow({
 	masterView:MainTests.masterNav,
-	detailView:MainTests.detailNav,
+	detailView:MainTests.detailNav
 });
 
 // SPLIT VIEW EVENT LISTENER
 MainTests.splitView.addEventListener('visible',function(e)
 {
-	Ti.API.info('HERE ' + e.view  + ' button ' + e.button)
+	Ti.API.info('HERE ' + e.view  + ' button ' + e.button);
 	// show master list when in detail mode via left nav button
 	if (e.view == 'detail')
 	{
@@ -56,7 +56,7 @@ MainTests.splitView.addEventListener('visible',function(e)
 MainTests.tableVewData = [
 	{title:'Popovers', v:Popover.view},
 	{title:'Option Dialogs', v:OptionDialog.view},
-	{title:'Embedded Video', v:Video.view},
+	{title:'Embedded Video', v:Video.view}
 ];
 
 MainTests.tableView = Ti.UI.createTableView({

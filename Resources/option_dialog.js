@@ -35,7 +35,7 @@ OptionDialog.init = function()
 	var dialog2 = Titanium.UI.createOptionDialog({
 		options:['Option 1', 'Option 2', 'Option 3'],
 		destructive:1,
-		cancel:2,
+		cancel:2
 
 	});
 

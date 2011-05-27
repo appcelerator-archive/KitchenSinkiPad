@@ -17,7 +17,7 @@ SplitViewNav.detailNav = Ti.UI.iPhone.createNavigationGroup({
 // SPLIT VIEW
 SplitViewNav.splitView = Titanium.UI.iPad.createSplitWindow({
 	masterView:SplitViewNav.masterNav,
-	detailView:SplitViewNav.detailNav,
+	detailView:SplitViewNav.detailNav
 });
 
 
@@ -35,7 +35,7 @@ SplitViewNav.masterButton.addEventListener('click', function()
 		color:'white',
 		textAlign:'center'
 	});
-	w.add(l)
+	w.add(l);
 	w.addEventListener('blur', function() {
 		Titanium.UI.createAlertDialog({
 			title:'Master blur',
@@ -109,7 +109,7 @@ done.addEventListener('click',function()
 
 SplitViewNav.open = function()
 {
-	Ti.API.info('in open for split view nav')
+	Ti.API.info('in open for split view nav');
 	SplitViewNav.splitView.open();	
 };
 
