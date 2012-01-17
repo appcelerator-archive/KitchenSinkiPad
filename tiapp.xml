@@ -3,6 +3,13 @@
 <id>com.nolanwright.kitchensinkipad</id>
 <name>KitchenSink-iPad</name>
 <version>1.0</version>
+<deployment-targets>
+    <target device="mobileweb">false</target>
+    <target device="blackberry">false</target>
+    <target device="iphone">false</target>
+    <target device="ipad">true</target>
+    <target device="android">false</target>
+</deployment-targets>
 <publisher>nwright</publisher>
 <url>http://www.appcelerator.com</url>
 <description>No description provided</description>
